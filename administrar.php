@@ -74,10 +74,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['eliminar'])) {
                     <td><?php echo $row['hora']; ?></td>
                     <td>
                         <form method="post" style="display:inline-block;">
-                            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                            <!--<input type="hidden" name="id" value="<?php echo $row['id']; ?>">-->
                             <button type="submit" name="eliminar" class="btn btn-danger">Eliminar</button>
                         </form>
-                        <a href="modificar-cita.php?id=<?php echo $row['id']; ?>" class="btn btn-warning">Modificar</a>
+                       <!-- <a href="modificar-cita.php?id=<?php echo $row['id']; ?>" class="btn btn-warning">Modificar</a>-->
                     </td>
                 </tr>
             <?php endwhile; ?>
